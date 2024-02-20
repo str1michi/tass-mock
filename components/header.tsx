@@ -55,44 +55,52 @@ export default function Header() {
                     ホーム
                   </a>
                 </div>
-                <Dropdown
-                  items={[
-                    { label: '業務日報一覧', url: '/daily_report_heads' },
-                    { label: '業務日報明細一覧', url: '/daily_report_bodies' }
-                  ]}
-                >
-                  業務日報
-                </Dropdown>
+                <div className='px-2 py-2'>
+                  <Dropdown
+                    items={[
+                      { label: '業務日報一覧', url: '/daily_report_heads' },
+                      { label: '業務日報明細一覧', url: '/daily_report_bodies' }
+                    ]}
+                  >
+                    業務日報
+                  </Dropdown>
+                </div>
                 <div className='px-2 py-2'>
                   <a className="hover:text-gray-400" href="/activity_reports">
                     業務処理簿
                   </a>
                 </div>
-                <Dropdown
-                  items={[
-                    { label: '依頼一覧', url: '/bizmatch_requests' },
-                    { label: '応募一覧', url: '/bizmatch_applications' }
-                  ]}
-                >
-                  ビジネスマッチング
-                </Dropdown>
-                <Dropdown
-                  items={[
-                    { label: '目標一覧', url: '/milestones' },
-                    { label: '全体進捗状況', url: '/all_progresses' }
-                  ]}
-                >
-                  目標管理
-                </Dropdown>
-                <Dropdown
-                  items={[
-                    { label: '関与先一覧', url: '/master_companies' },
-                    { label: '税理士一覧', url: '/master_taxaccountants' },
-                    { label: 'システム管理', url: '/admin' }
-                  ]}
-                >
-                  設定
-                </Dropdown>
+                <div className='px-2 py-2'>
+                  <Dropdown
+                    items={[
+                      { label: '依頼一覧', url: '/bizmatch_requests' },
+                      { label: '応募一覧', url: '/bizmatch_applications' }
+                    ]}
+                  >
+                    ビジネスマッチング
+                  </Dropdown>
+                </div>
+                <div className='px-2 py-2'>
+                  <Dropdown
+                    items={[
+                      { label: '目標一覧', url: '/milestones' },
+                      { label: '全体進捗状況', url: '/all_progresses' }
+                    ]}
+                  >
+                    目標管理
+                  </Dropdown>
+                </div>
+                <div className='px-2 py-2'>
+                  <Dropdown
+                    items={[
+                      { label: '関与先一覧', url: '/master_companies' },
+                      { label: '税理士一覧', url: '/master_taxaccountants' },
+                      { label: 'システム管理', url: '/admin' }
+                    ]}
+                  >
+                    設定
+                  </Dropdown>
+                </div>
                 <div className='px-2 py-2'>
                   <button className="px-2 py-1 border rounded hover:text-gray-400">
                     サインアウト
