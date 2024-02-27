@@ -21,9 +21,9 @@ export default function DailyReport() {
   return (
     <div>
       <div className="grid grid-cols-12 gap-2">
-        <div className="col-span-4 lg:col-span-4">
+        <div className="col-span-full lg:col-span-2">
           <label htmlFor="report_date" className="block font-medium mb-2 dark:text-white">対象日</label>
-          <InputDate id="report_date" disabled />
+          <InputDate id="report_date" />
         </div>
       </div>
 

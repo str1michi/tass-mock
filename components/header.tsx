@@ -73,21 +73,21 @@ export default function Header() {
                 <div className='px-2 py-2'>
                   <Dropdown
                     items={[
-                      { label: '依頼一覧', url: '/bizmatch_requests' },
-                      { label: '応募一覧', url: '/bizmatch_applications' }
-                    ]}
-                  >
-                    ビジネスマッチング
-                  </Dropdown>
-                </div>
-                <div className='px-2 py-2'>
-                  <Dropdown
-                    items={[
                       { label: '目標一覧', url: '/milestones' },
                       { label: '全体進捗状況', url: '/all_progresses' }
                     ]}
                   >
                     目標管理
+                  </Dropdown>
+                </div>
+                <div className='px-2 py-2'>
+                  <Dropdown
+                    items={[
+                      { label: '依頼一覧', url: '/bizmatch_requests' },
+                      { label: '応募一覧', url: '/bizmatch_applications' }
+                    ]}
+                  >
+                    ビジネスマッチング
                   </Dropdown>
                 </div>
                 <div className='px-2 py-2'>

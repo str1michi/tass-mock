@@ -27,11 +27,11 @@ export default function DailyReport() {
   return (
     <div className="">
       <div className="grid grid-cols-12 gap-2">
-        <div className="col-span-4 lg:col-span-4">
+        <div className="col-span-6 lg:col-span-2">
           <label htmlFor="report_date" className="block mb-1">報告日</label>
           <InputDate id="report_date" disabled />
         </div>
-        <div className="col-span-4 lg:col-span-8">
+        <div className="col-span-6 lg:col-span-3">
           <label htmlFor="reporter" className="block mb-1">報告者</label>
           <InputText id="reporter" disabled />
         </div>

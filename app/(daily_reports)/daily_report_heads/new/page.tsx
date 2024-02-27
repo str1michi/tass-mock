@@ -21,13 +21,9 @@ export default function DailyReport() {
   return (
     <div>
       <div className="grid grid-cols-12 gap-2">
-        <div className="col-span-4 lg:col-span-4">
+        <div className="col-span-full lg:col-span-2">
           <label htmlFor="report_date" className="block mb-1">報告日</label>
           <InputDate id="report_date" />
-        </div>
-        <div className="col-span-4 lg:col-span-8">
-          <label htmlFor="reporter" className="block mb-1">報告者</label>
-          <InputText id="reporter" />
         </div>
         <div className="col-span-full">
           <label htmlFor="report_content" className="block mb-1">業務内容</label>
